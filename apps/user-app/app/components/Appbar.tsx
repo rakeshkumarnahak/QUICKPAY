@@ -15,7 +15,7 @@ export default function Appbar({ user, onSignin, onSignout }: AppbarProps) {
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
       {/* Mobile View */}
       <div className="flex w-full items-center justify-between md:hidden">
-        <Link href="#" className="flex items-center" prefetch={false}>
+        <Link href="/" className="flex items-center" prefetch={false}>
           <MountainIcon className="h-6 w-6" />
           <span className="text-xl ml-2 font-semibold">Quick Pay</span>
         </Link>
@@ -37,33 +37,27 @@ export default function Appbar({ user, onSignin, onSignout }: AppbarProps) {
             </div>
             <div className="grid gap-2">
               <Link
-                href="#"
+                href="/dashboard"
                 className="flex w-full items-center py-2 text-lg font-semibold"
                 prefetch={false}
               >
-                Home
+                Dashboard
               </Link>
               <Link
-                href="#"
+                href="/transfer"
                 className="flex w-full items-center py-2 text-lg font-semibold"
                 prefetch={false}
               >
-                About
+                Transfer
               </Link>
               <Link
-                href="#"
+                href="/transactions"
                 className="flex w-full items-center py-2 text-lg font-semibold"
                 prefetch={false}
               >
-                Services
+                Transactions
               </Link>
-              <Link
-                href="#"
-                className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
-              >
-                Contact
-              </Link>
+
               <Button
                 className="flex w-full items-center py-2 text-lg font-semibold"
                 onClick={user ? onSignout : onSignin}
@@ -86,32 +80,25 @@ export default function Appbar({ user, onSignin, onSignout }: AppbarProps) {
       </Link>
       <nav className="ml-auto hidden md:flex gap-6">
         <Link
-          href="#"
+          href="/dashboard"
           className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
           prefetch={false}
         >
-          Home
+          Dashboard
         </Link>
         <Link
-          href="#"
+          href="/transfer"
           className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
           prefetch={false}
         >
-          About
+          Transfer
         </Link>
         <Link
-          href="#"
+          href="/transactions"
           className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
           prefetch={false}
         >
-          Services
-        </Link>
-        <Link
-          href="#"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-          prefetch={false}
-        >
-          Contact
+          Transactions
         </Link>
         <Button
           className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
