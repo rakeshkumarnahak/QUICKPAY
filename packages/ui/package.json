@@ -4,8 +4,8 @@
   "private": true,
   "exports": {
     "./components/*":[
-      "./src/components/*.tsx",
-      "./src/components/*.ts"
+      "./src/*.tsx",
+      "./src/*.ts"
     ],
     "./Appbar": "./src/Appbar.tsx",
     "./button": "./src/button.tsx",
